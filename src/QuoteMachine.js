@@ -29,12 +29,10 @@ export default class QuoteMachine extends Component {
 
     componentWillMount() {
         this.quote = this.state.quotes[Math.floor(Math.random() * 4)];
-        console.log(this.quote);
     }
     newQuote = () => {
         this.quote = this.state.quotes[Math.floor(Math.random() * 4)];
         this.forceUpdate();
-        console.log(this.quote);
     }
 
     render() {
